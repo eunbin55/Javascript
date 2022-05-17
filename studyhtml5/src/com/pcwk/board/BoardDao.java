@@ -114,7 +114,7 @@ public class BoardDao implements WorkDiv<BoardVO> {
 			// conn 자원반납
 			JDBCUtil.close(conn);
 		}
-
+											
 		return totalCnt;
 	}
 
