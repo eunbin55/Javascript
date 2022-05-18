@@ -1,0 +1,69 @@
+<!-- Html comment -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="html, css, javascript, jsp" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<!-- 스타일 시트 -->
+<style type="text/css">
+
+div #button {
+  background: skyblue;
+  position: relative;
+  left: 340px;
+}
+
+table,tr,td {
+  border: 1px solid black;
+}
+
+#thead {
+  text-align: center;
+  background: royalblue;
+  color: white;
+}
+</style>
+
+<title>Insert title here</title>
+<!-- 자바스크립트 코드 -->
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<h2>게시-등록</h2>
+		<hr />
+		<!-- 버튼 -->
+		<div id="button">
+			<input type="button" value="등록" id="doSave" >
+			<input type="button" value="목록" id="moveToList">
+		</div>
+		<!-- // 버튼 -->
+		<!-- 입력 ----------------------------------------------->
+		<form action="#"> 
+			<table>
+				<tr>
+					<td width="100" id="thead"><label for="title">제목</label></td>
+					<td><input maxlength="200" type="text" size="40" name="title" id="title" value="글제목1"></td>
+				</tr>
+				<tr>
+					<td id="thead"><label for="regId">등록자</label></td>
+					<td><input maxlength="20" type="text" size="40" name="regId" id="regId" value="admin" readonly="readonly"></td>
+				</tr>
+				<tr>
+				  <td id="thead"><label for="contents">내용</label></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2"><textarea rows="10" cols="58" name="contents"
+							id="contents">내일은 즐거운 목요일...</textarea></td>
+				</tr>
+
+			</table>
+		</form>
+		<!-- // 입력 ------------------------------------------->
+	</div>
+</body>
+</html>
