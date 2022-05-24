@@ -6,9 +6,6 @@
     pageEncoding="UTF-8"%>
 <!-- JSTL core -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-
 <%@include file="/com/common.jsp" %>    
 <%
    //param읽기
@@ -47,12 +44,15 @@
 
 
 <!--reset 스타일 시트 -->
-<link rel="stylesheet" type="text/css" href="<%=contPath %>/asset/css/reset.css">
-<!-- 부트스트랩 -->
+<!-- link rel="stylesheet" type="text/css" href="<%=contPath %>/asset/css/reset.css" -->
+
+<!-- bootstrap CDN -->
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
 <!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
 <link rel="stylesheet"  type="text/css" href="<%=contPath %>/asset/css/jquery-ui.css">
 <!--스타일 시트 -->
 <style type="text/css">
@@ -64,7 +64,6 @@
 <script type="text/javascript" src="<%=contPath %>/asset/js/jquery-ui.js"></script>
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<%=contPath %>/asset/js/common.js"></script>
 
 <!-- 스타일 시트 -->
 <style type="text/css">
